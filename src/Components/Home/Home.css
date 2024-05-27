@@ -1,0 +1,76 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+/* Ensure footer is always at the bottom */
+.footer {
+    background-color: #565656;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adding padding for smaller screens */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #aaa;
+}
+
+/* Media query for tablets and below */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .hero{
+        margin-top: 100px;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        padding: 5px 0;
+    }
+}
