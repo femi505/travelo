@@ -1,156 +1,150 @@
 /* AboutUs.css */
 
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .about-content {
-    text-align: center;
-    color: white; /* Text color */
-  }
-  
-  .about-content h1 {
-    font-size: 3em; /* Adjust the font size as needed */
-  }
-  
-  .about-description {
-    background-color: white; /* White background */
-    padding: 20px; /* Add some padding */
-    border-radius: 10px; /* Add rounded corners */
-    margin-top: 20px; /* Adjust spacing from the heading */
-    font-size: 1.5em; /* Adjust the font size to make the text bigger */
-  }
- 
-  .about-description p {
-    font-size: 0.6em; /* Adjust the font size as needed */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
+.about-content {
+  text-align: center;
+  color: white;
+}
 
-  .footer {
-    background-color: #565656;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+.about-content h1 {
+  font-size: 3em;
+}
+
+.about-description {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 1em;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-description p {
+  font-size: 0.8em;
+}
+
+.footer {
+  background-color: #565656;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px; /* Adding padding for smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .footer-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: #aaa;
+  color: #aaa;
 }
 
 /* Media query for tablets and below */
 @media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .footer-links {
-        justify-content: center;
-    }
+  .footer-links {
+    justify-content: center;
+  }
 
-    
-    .about-description{
-        width: 300px;
-    }
+  .about-description {
+    width: 90%;
+    padding: 15px;
+    font-size: 0.9em;
+  }
+
+  .about-description p {
+    font-size: 0.7em;
+  }
 }
 
 /* Media query for mobile devices */
 @media (max-width: 480px) {
-    .footer {
-        padding: 10px 0;
-    }
+  .footer {
+    padding: 10px 0;
+  }
 
-    .footer-links {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .footer-links a {
-        padding: 5px 0;
-    }
-
-    
-    .about-description{
-        width: 300px;
-    }
+  .footer-links a {
+    padding: 5px 0;
+  }
 }
-
 
 /* Medium screens (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .about-content h1 {
-      font-size: 3em;
-    }
-  
-    .about-description {
-      font-size: 1.2em;
-    }
-  
-    .about-description p {
-      font-size: 0.8em;
-    }
+  .about-description {
+    font-size: 0.9em;
+    width: 70%;
+  }
 
-    
-    .about-description{
-        width: 300px;
-    }
+  .about-description p {
+    font-size: 0.7em;
   }
-  
-  /* Large screens (desktops, 1024px and up) */
-  @media (min-width: 1024px) {
-    .about-content h1 {
-      font-size: 3.5em;
-    }
-  
-    .about-description {
-      font-size: 1.5em;
-    }
-  
-    .about-description p {
-      font-size: 1em;
-    }
+}
+
+/* Large screens (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .about-content h1 {
+    font-size: 3.5em;
   }
-  
-  /* Extra large screens (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    .about-content h1 {
-      font-size: 4em;
-    }
-  
-    .about-description {
-      font-size: 1.7em;
-    }
-  
-    .about-description p {
-      font-size: 1.2em;
-    }
+
+  .about-description {
+    font-size: 1em;
+    width: 60%;
   }
+
+  .about-description p {
+    font-size: 0.8em;
+  }
+}
+
+/* Extra large screens (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .about-content h1 {
+    font-size: 4em;
+  }
+
+  .about-description {
+    font-size: 1.1em;
+    width: 50%;
+  }
+
+  .about-description p {
+    font-size: 0.9em;
+  }
+}
